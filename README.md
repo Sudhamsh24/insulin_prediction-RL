@@ -1,9 +1,9 @@
-#🩺 Hybrid SAC-TD3 Agent
+# 🩺 Hybrid SAC-TD3 Agent
 
 A safety-critical Reinforcement Learning (RL) framework for autonomous insulin dosing in Type 1 Diabetes management.
 This project combines Soft Actor-Critic (SAC) and Twin Delayed Deep Deterministic Policy Gradient (TD3) to achieve robust and safe glycemic control in the simglucose simulator.
 
-##📌 Project Overview
+## 📌 Project Overview
 
 Diabetes management requires precise insulin dosing, where incorrect decisions can lead to severe hypoglycemia or hyperglycemia.
 
@@ -20,7 +20,7 @@ Hybrid SAC-TD3	78.78%
 
 ✅ +6.51% absolute improvement in glycemic control using the hybrid model
 
-##🏗️ System Architecture
+## 🏗️ System Architecture
 
 The agent is trained on a cohort of 10 virtual adult patients using a realistic stochastic meal scenario.
 
@@ -49,7 +49,7 @@ Uses exponential punishment for hypoglycemia
 Rule-based safety layer:
 Blocks unsafe insulin doses
 Uses BG trends + IOB constraints
-##📂 Repository Structure
+## 📂 Repository Structure
 ├── agents/
 │   ├── sac_agent.py        # SAC implementation
 │   ├── td3_agent.py        # TD3 implementation
@@ -63,7 +63,7 @@ Uses BG trends + IOB constraints
 ├── td3_complete_training.py  # Main training script
 ├── results/                  # Evaluation plots & metrics
 └── README.md
-##🚀 Getting Started
+## 🚀 Getting Started
 📦 Prerequisites
 Python 3.9+
 simglucose (T1D Simulator)
@@ -78,7 +78,7 @@ pip install -r requirements.txt
 Train across 10 virtual patients in parallel:
 
 python td3_complete_training.py
-##📊 Evaluation
+## 📊 Evaluation
 
 The model is tested on a standardized meal scenario:
 
@@ -87,7 +87,7 @@ The model is tested on a standardized meal scenario:
 Smoother glucose trajectories
 Faster recovery from meal spikes
 No hypoglycemic events
-##📜 Abstract
+## 📜 Abstract
 
 Diabetes management requires precise insulin dosing, where incorrect predictions can lead to severe health consequences. This project proposes a hybrid Reinforcement Learning framework combining SAC and TD3 to model complex insulin-glucose dynamics.
 
@@ -95,7 +95,7 @@ By integrating a multi-layered safety framework—including IOB-aware states, re
 
 This work demonstrates a reliable, scalable, and safety-first approach for autonomous glucose regulation.
 
-##⭐ Future Work
+## ⭐ Future Work
 Real patient data validation
 Deployment on embedded medical devices
 Integration with continuous glucose monitoring (CGM) systems
