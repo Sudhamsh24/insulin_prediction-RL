@@ -50,6 +50,8 @@ Rule-based safety layer:
 Blocks unsafe insulin doses
 Uses BG trends + IOB constraints
 ## 📂 Repository Structure
+
+```bash
 ├── agents/
 │   ├── sac_agent.py        # SAC implementation
 │   ├── td3_agent.py        # TD3 implementation
@@ -63,6 +65,7 @@ Uses BG trends + IOB constraints
 ├── td3_complete_training.py  # Main training script
 ├── results/                  # Evaluation plots & metrics
 └── README.md
+```
 ## 🚀 Getting Started
 📦 Prerequisites
 Python 3.9+
